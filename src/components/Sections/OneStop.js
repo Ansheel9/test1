@@ -2,30 +2,40 @@ import React from "react";
 
 export const OneStop = () => {
     return (
-        <section class="bg-coolGray-100 py-10 text-coolGray-800">
+        <section class="bg-white relative lg:pt-20 lg:pb-40  text-gray-800">
             <div>
-                <div class="container flex flex-col mx-auto lg:flex-row lg:px-20 ">
+                <img class="hidden lg:block lg:absolute top-72 left-10 animate-bounce-slow " src={"/assets/images/nairacoin-01b.png"} alt=""/>
+                <img class="hidden lg:block lg:absolute top-72 right-10 animate-bounce-slow " src={"/assets/images/nairacoin-01a.png"} alt=""/>
+                <div class="container  relative flex flex-col mx-auto lg:flex-row lg:px-24 ">
                     <div className="pr-10">
-                        <img class="" src={"/assets/images/Rectangle1945.png"} alt="" width="auto" />
+                        <img class="h-full " src={"/assets/images/Rectangle1945.svg"} alt="" width="500px" />
                     </div>
                     {/* <div class="w-full lg:w-1/3" style={{ backgroundImage: `url('/assets/images/Rectangle1945.png')` , backgroundPosition: 'center ' , backgroundSize: 'cover'}}></div> */}
-                        <div class="flex flex-col w-full p-6 lg:w-2/3 ">
-                            <div class="flex items-center justify-between p-4 space-x-4 rounded-full bg-gray-100 text-gray-800">
+                    <div class="flex flex-col w-full p-6 lg:w-2/3 ">
+                            {/* <div class="flex items-center justify-between p-4 space-x-4 rounded-full bg-white text-gray-800 shadow-2xl ">
                                 <div class="flex items-center self-stretch justify-center">
                                 <img class="pr-10" src={"/assets/images/Group735.png"} alt="" width="auto" />
                                 <span className="font-bold text-2xl" >Your one stop financial partner</span>
                                 </div>   
-                            </div>
+                            </div> */}
+                        <div className="">
+                            <img class=" w-full h-full pt-12 -ml-52 " src={"/assets/images/Group735.svg"} alt="" 
+                            />
+                        </div>
                        
-                        <p class="mt-4 mb-8 text-justify text-xl">Do you need to save more, reduce debt, invest or
+                        <p class="mb-8 text-justify text-xl font-light ">Do you need to save more, reduce debt, invest or
                             make progress towards long-term financial targets. 
                             We will help you evaluate financial situations and needs, 
                             guide and engage you to achieve your financial goals.
                         </p>
-                        <button class="self-start px-10 py-3 text-lg font-medium rounded-3xl bg-green-50 text-white">Get started</button>
+                        <button class="self-start transform hover:scale-110 px-10 py-3 text-lg font-medium rounded-lg bg-green-50 text-white">Get started</button>
                     </div>
                 </div>
+                <div className=" z-20  " style={{ marginTop: -590 , marginBottom: 250, marginLeft: 260 ,  }}  >
+                    <img class=" w-72 h-full -mt-64 ml-64  " src={"/assets/images/Group729.png"} alt="" />
+                </div>
             </div>
+            
         </section>
     )
 }

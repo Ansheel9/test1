@@ -2,10 +2,10 @@ import React from "react";
 
 export const Hero = () => {
     return (
-        <section class="relative pb-20">
-            <nav class="flex justify-between items-center py-4 px-4 xl:px-10 top-0 fixed z-50 w-full flex-wrap navbar-expand-lg bg-white shadow">
+        <section class="relative mb-40">
+            <nav class="flex justify-between items-center py-3 px-4 xl:px-10 top-0 fixed z-50 w-full flex-wrap navbar-expand-lg bg-white shadow">
                 <a class="text-lg font-semibold" href="#">
-                    <img class="" src={"/assets/images/logo.png"} alt="" width="auto" />
+                    <img class=" pl-16 " src={"/assets/images/logo.svg"} alt="" width="auto" />
                 </a>
                 <div class="lg:hidden">
                 <button class="navbar-burger flex items-center p-3 hover:bg-gray-50 rounded">
@@ -16,20 +16,21 @@ export const Hero = () => {
                 </button>
                 </div>
                 <ul class="hidden lg:flex lg:ml-auto lg:mr-12 lg:items-center lg:w-auto lg:space-x-12">
-                <li><a class="text-sm font-medium" href="#">Login</a></li>
+                <li><a class="text-lg font-normal" href="#">Login</a></li>
                 </ul>
-                <div class="hidden lg:block">
-                    <a class="inline-block py-3 px-8 text-sm leading-normal font-medium bg-green-50 hover:bg-green-600 text-white rounded transition duration-200" href="#">
+                <div class="hidden lg:block pr-16 transform hover:scale-110 ">
+                    <a class="inline-block py-3 px-8 text-md leading-normal font-medium bg-green-50 hover:bg-green-50 text-white rounded transition duration-500" href="#">
                     Get Started</a>
                 </div>
             </nav>
-            <img class="hidden lg:block lg:absolute top-0 left-0 mt-32" src="zeus-assets/icons/dots/blue-dot-left-bars.svg" alt=""/>
-            <img class="hidden lg:block lg:absolute bottom-0 right-0 mt-20" src="zeus-assets/icons/dots/yellow-dot-right.svg" alt=""/>
-            <img class="lg:hidden absolute bottom-0 left-0 -mb-20" src="zeus-assets/icons/dots/blue-dot-left-bars.svg" alt="" />
+           
+            <img class="hidden lg:block lg:absolute top-32 left-1 animate-bounce-slow " src={"/assets/images/1.svg"} alt=""/>
+            <img class="hidden lg:block lg:absolute top-32 right-8 animate-bounce-slow " src={"/assets/images/2.svg"} alt=""/>
+            <img class="hidden lg:block lg:absolute -bottom-16 left-20 -mb-28 animate-bounce-slow" src={"/assets/images/4.svg"} alt=""/>
+            <img class="hidden lg:block lg:absolute -bottom-16 -right-0  -mb-24 animate-bounce-slow" src={"/assets/images/4a.svg"} alt=""/>
             <div class="relative container pt-12 px-4 mx-auto text-center">
-                
-                <h2 class="mt-8 lg:py-20 mb-8 lg:mb-12 text-4xl lg:text-6xl font-semibold">Money Management <br></br> Reimagined</h2>
-                <p class="max-w-3xl mx-auto mb-8 lg:mb-12 text-xl text-gray-500">
+                <h2 class="mt-40 lg:py-2 mb-8 lg:mb-5 text-4xl lg:text-6xl font-bold">Money Management <br></br> Reimagined</h2>
+                <p class="max-w-2xl mx-auto mb-8 lg:mb-12 text-xl text-gray-500">
                 Because growing your wealth does not have to be a full time job for you. Let's grow wealth for you!</p>
                 </div>
             <div class="hidden navbar-menu relative z-50">
