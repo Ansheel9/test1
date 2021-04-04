@@ -5,7 +5,7 @@ import { faMoneyCheck, faUserFriends , faUniversity , faFileInvoiceDollar } from
 export const Investment = () => {
     return (
 		<section class="bg-white relative ">
-            <img class="hidden lg:block lg:absolute -bottom-10 inset-x-20 ml-52 " src={"/assets/images/MaskGroup1.svg"} alt=""/>
+            <img class="hidden lg:block lg:absolute -bottom-10 inset-x-20 ml-52 transform hover:scale-110" src={"/assets/images/MaskGroup1.svg"} alt=""/>
             <img class="hidden lg:block lg:absolute top-5 left-32 animate-bounce-slow" src={"/assets/images/nairacoin-01a.png"} alt=""/>
             <img class="hidden lg:block lg:absolute bottom-10 left-52 animate-bounce-slow" src={"/assets/images/nairacoin-01a.png"} alt=""/>
 
@@ -14,7 +14,7 @@ export const Investment = () => {
                     
                 </div>
             
-                <div class="flex bg-white  flex-col justify-center lg:-mr-0 text-center border-t border-b border-l  rounded-bl-3xl shadow-2xl lg:max-w-3xl lg:text-left">
+                <div class="flex bg-white  flex-col justify-center lg:-mr-0 text-left lg:border-t lg:border-b border-l  rounded-bl-3xl lg:shadow-2xl lg:max-w-3xl lg:text-left">
                     <div class="flex py-2 mr-auto w-72 -mt-8 rounded-t-xl shadow-2xl bg-green-50">
                         <h1 className="text-white mx-auto  font-semibold text-2xl ">Investment</h1>
                     </div>

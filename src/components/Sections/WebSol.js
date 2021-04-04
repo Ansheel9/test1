@@ -11,9 +11,9 @@ export const WebSol = () => {
 
             <div class="container relative mx-auto flex flex-col justify-center  sm:py-1 lg:flex-row lg:justify-between">
                 <div class="flex items-center justify-center">
-                   <img src={"/assets/images/macbook.svg"} alt="" class="animate-bounce-slow" /> 
+                   <img src={"/assets/images/macbook.svg"} alt="" class="transform hover:scale-110" /> 
                 </div>
-                <div class="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
+                <div class="flex flex-col justify-center p-6 text-left rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
                     <h1 class="lg:text-5xl font-bold leading-none text-3xl">
 						Web solution
 					</h1>

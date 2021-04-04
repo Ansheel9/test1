@@ -1,6 +1,7 @@
 import React from "react";
 
 export const Hero = () => {
+    const [ showNav , setShowNav ] = React.useState(false)
     return (
         <section class="relative mb-40">
             <nav class="flex justify-between items-center py-3 px-4 xl:px-10 top-0 fixed z-50 w-full flex-wrap navbar-expand-lg bg-white shadow">
@@ -8,15 +9,35 @@ export const Hero = () => {
                     <img class=" pl-16 " src={"/assets/images/logo.svg"} alt="" width="auto" />
                 </a>
                 <div class="lg:hidden">
-                <button class="navbar-burger flex items-center p-3 hover:bg-gray-50 rounded">
-                    <svg class="block h-4 w-4" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                    <title>Mobile menu</title>
-                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
-                    </svg>
-                </button>
+                    <button class="navbar-burger flex items-center p-3 hover:bg-gray-50 rounded" 
+                    onClick={() => setShowNav(showNav => !showNav)}
+                    >
+                        <svg class="block h-4 w-4" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <title>Mobile menu</title>
+                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                        </svg>
+                    </button>
+                    { showNav ? <div className="inline-flex">
+                        <ul class="flex items-center w-auto space-x-12 ">
+                        <li>
+                            <a class="text-lg font-normal" href="#">Login</a>
+                        </li>
+                        <li>
+                            <a class="inline-block py-3 px-8 text-md leading-normal font-medium bg-green-50 hover:bg-green-50 text-white rounded transition duration-500" href="#">
+                                Get Started</a>
+                        </li>
+                        </ul>
+                    </div>
+                    
+                    : null
+                
+                    
+                    }
                 </div>
                 <ul class="hidden lg:flex lg:ml-auto lg:mr-12 lg:items-center lg:w-auto lg:space-x-12">
-                <li><a class="text-lg font-normal" href="#">Login</a></li>
+                <li>
+                    <a class="text-lg font-normal hover:text-green-50 " href="#">Login</a>
+                </li>
                 </ul>
                 <div class="hidden lg:block pr-16 transform hover:scale-110 ">
                     <a class="inline-block py-3 px-8 text-md leading-normal font-medium bg-green-50 hover:bg-green-50 text-white rounded transition duration-500" href="#">
@@ -25,11 +46,12 @@ export const Hero = () => {
             </nav>
            
             <img class="hidden lg:block lg:absolute top-32 left-1 animate-bounce-slow " src={"/assets/images/1.svg"} alt=""/>
-            <img class="hidden lg:block lg:absolute top-32 right-8 animate-bounce-slow " src={"/assets/images/2.svg"} alt=""/>
+            <img class="hidden lg:block lg:absolute top-32 right-4 animate-bounce-slow " src={"/assets/images/2.svg"} alt=""/>
             <img class="hidden lg:block lg:absolute -bottom-16 left-20 -mb-28 animate-bounce-slow" src={"/assets/images/4.svg"} alt=""/>
-            <img class="hidden lg:block lg:absolute -bottom-16 -right-0  -mb-24 animate-bounce-slow" src={"/assets/images/4a.svg"} alt=""/>
+            <img class="hidden lg:block lg:absolute -bottom-16 -right-8 -mb-24 animate-bounce-slow" src={"/assets/images/4a.svg"} alt=""/>
+           
             <div class="relative container pt-12 px-4 mx-auto text-center">
-                <h2 class="mt-40 lg:py-2 mb-8 lg:mb-5 text-4xl lg:text-6xl font-bold">Money Management <br></br> Reimagined</h2>
+                <h2 class="lg:mt-40 mt-20 lg:py-2 mb-8 lg:mb-5 text-5xl lg:text-6xl font-bold">Money Management <br></br> Reimagined</h2>
                 <p class="max-w-2xl mx-auto mb-8 lg:mb-12 text-xl text-gray-500">
                 Because growing your wealth does not have to be a full time job for you. Let's grow wealth for you!</p>
                 </div>

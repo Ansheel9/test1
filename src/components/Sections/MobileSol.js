@@ -7,8 +7,8 @@ export const MobileSol = () => {
 			<img class="hidden lg:block lg:absolute top-20 inset-x-72 animate-bounce-slow" src={"/assets/images/nairacoin-01a.png"} alt=""/>
             <img class="hidden lg:block lg:absolute top-96 right-20 animate-bounce-slow" src={"/assets/images/nairacoin-01a.png"} alt=""/>
 
-			<div class="container relative mx-auto flex flex-col justify-center p-6 sm:py-12 lg:py-5 lg:flex-row lg:justify-between">
-				<div class="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-lg xl:max-w-xl lg:text-left">
+			<div class="container relative mx-auto flex flex-col justify-center lg:p-6 sm:py-12 lg:py-5 lg:flex-row lg:justify-between">
+				<div class="flex flex-col justify-center p-6 text-left rounded-sm lg:max-w-lg xl:max-w-xl lg:text-left">
 					<h1 class="lg:text-5xl font-bold leading-none text-3xl">
 						Mobile solution
 					</h1>
@@ -21,8 +21,8 @@ export const MobileSol = () => {
 						
 					</p>
 				</div>
-				<div class="flex lg:mr-20 animate-bounce-slow">
-					<img src={"/assets/images/Screen+Phone.svg"} alt="" class="" />
+				<div class="flex lg:mr-20 ">
+					<img src={"/assets/images/Screen+Phone.svg"} alt="" class="transform hover:scale-110" />
 				</div>
 			</div>
 		</section>
