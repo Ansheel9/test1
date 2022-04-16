@@ -16,8 +16,9 @@ export const Section = () => {
             <ThreeFeatures></ThreeFeatures>
             <MobileSol></MobileSol>
             <WebSol></WebSol>
+            <MobileSol></MobileSol>
+            <WebSol></WebSol>
             <Savings></Savings>
-            <Investment></Investment>
             <CTA></CTA>
         </div>
 )
